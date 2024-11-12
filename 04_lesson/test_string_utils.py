@@ -3,11 +3,11 @@ from string_utils import StringUtils
 utils = StringUtils()
 
 
-def test_capitilize():
-    assert utils.capitilize("man") == "Man"
-    assert utils.capitilize("mAn") == "Man"
-    assert utils.capitilize("") == ""
-    assert utils.capitilize("   ") == "   "
+def test_capitalize():
+    assert utils.capitalize("man") == "Man"
+    assert utils.capitalize("mAn") == "Man"
+    assert utils.capitalize("") == ""
+    assert utils.capitalize("   ") == "   "
 
 def test_trim():
     assert utils.trim("  man") == "man"
@@ -42,9 +42,9 @@ def test_end_with():
     assert utils.end_with("Tropical", "q") is False
 
 def test_is_empty():
-    assert utils.test_is_empty("") is True
-    assert utils.test_is_empty("   ") is True
-    assert utils.test_is_empty("man") is False
+    assert utils.is_empty("") is True
+    assert utils.is_empty("   ") is True
+    assert utils.is_empty("man") is False
 
 def test_list_to_string():
     assert utils.list_to_string([1, 2, 3]) == "1, 2, 3"
